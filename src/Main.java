@@ -11,20 +11,20 @@ public class Main {
         System.out.println("Are you search for PC or Laptop: ");
         String userSelection = input.next().toLowerCase();
 
-        Budget budget1 = new Budget();
+        Budget budget = new Budget();
 
         switch (userSelection){
             case "pc":
                 System.out.println("Price Range: ");
-                budget1.priceRange();
+                budget.priceRange();
                 double userChoice = input.nextDouble();
-                budget1.typeOfCases(userChoice);
+                budget.typeOfCases(userChoice);
                 break;
             case "laptop":
                 System.out.println("Size: ");
-                budget1.laptopSizepick();
+                budget.laptopSizepick();
                 int userChoice1 = input.nextInt();
-                budget1.laptopSize(userChoice1);
+                budget.laptopSize(userChoice1);
                 break;
             default:
                 System.out.println("The selection is case sensitive or incorrect input.");
