@@ -2,9 +2,9 @@ public class Budget {
     public void typeOfCases(double priceRange){
         if (priceRange <= 300) {
             System.out.println("Slim would be perfect for you.");
-        } else if (priceRange >= 325 && priceRange <= 600) {
+        } else if (priceRange >= 301 && priceRange < 600) {
             System.out.println("We recommend a Laptop or mid-tower.");
-        } else if(priceRange >= 625 && priceRange <= 1000) {
+        } else if(priceRange >= 600 && priceRange < 1000) {
             System.out.println("Are you looking for a workstation?");
         } else if(priceRange >= 1000) {
             System.out.println("A powerful full-tower or a gamer Laptop.");
