@@ -9,7 +9,7 @@ public class Budget {
         } else if(priceRange >= 1000) {
             System.out.println("A powerful Full-tower or a gamer Laptop: ");
         } else {
-            System.out.println("There is new value.");
+            System.out.println("There is no value.");
         }
     }
 
