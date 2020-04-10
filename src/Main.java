@@ -6,7 +6,7 @@ public class Main {
         System.out.println("Enter Name:");
         String userName = input.next();
 
-        Greet hello = new Greet(userName);
+        new Greet(userName);
         System.out.println("Are you searching for PC or Laptop?");
         String userSelection = input.next().toLowerCase();
 
