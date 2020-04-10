@@ -1,7 +1,5 @@
 public class Budget {
-    public void typeOfCases(double custBudget){
-        double priceRange = custBudget;
-
+    public void typeOfCases(double priceRange){
         if (priceRange <= 300) {
             System.out.println("Slim would be perfect for you.");
         } else if (priceRange >= 325 && priceRange <= 600) {
