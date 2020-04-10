@@ -28,16 +28,16 @@ public class Budget {
     }
 
     public void priceRange(){
-        System.out.println("Less than 300");
-        System.out.println("More than 325 but less than 600");
-        System.out.println("More than 625 but less than 1000");
+        System.out.println("300 or less");
+        System.out.println("More than 300 but less than 600");
+        System.out.println("More than 600 but less than 1000");
         System.out.println("More than 1000");
     }
 
     public void laptopSizepick(){
-        System.out.println("11 inches to 12 inches");
-        System.out.println("13 inches to 14 inches");
-        System.out.println("15 inches to 16 inches");
-        System.out.println("17 inches to 18 inches");
+        System.out.println("11 to 12 inches");
+        System.out.println("13 to 14 inches");
+        System.out.println("15 to 16 inches");
+        System.out.println("17 to 18 inches");
     }
 }
