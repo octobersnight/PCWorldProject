@@ -4,9 +4,8 @@ public class Main {
     public static void main(String [] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter Name:");
-        String userName = input.next();
 
-        new Greet(userName);
+        new Greet(input.next());
         System.out.println("Are you searching for PC or Laptop?");
         String userSelection = input.next().toLowerCase();
 
