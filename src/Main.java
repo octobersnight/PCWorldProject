@@ -9,13 +9,11 @@ public class Main {
 
         Greet hello = new Greet(userName);
         System.out.println("Are you search for PC or Laptop: ");
-        String userSelection = input.next();
-
-        String userSelectionConvertToLowerCase = userSelection.toLowerCase();
+        String userSelection = input.next().toLowerCase();
 
         Budget budget1 = new Budget();
 
-        switch (userSelectionConvertToLowerCase){
+        switch (userSelection){
             case "pc":
                 System.out.println("Price Range: ");
                 budget1.priceRange();
