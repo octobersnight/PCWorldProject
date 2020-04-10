@@ -6,9 +6,9 @@ public class RequestInfo {
     private String custAddress;
     private String custContactNum;
 
-    public String getBrand() {return brand;}
-    public String getSize() {return size;}
-    public double getBudget() {return budget;}
+    public String getBrand() { return brand; }
+    public String getSize() { return size; }
+    public double getBudget() { return budget; }
 
     public void brandName(){
         System.out.println("Enter a brand: ");
