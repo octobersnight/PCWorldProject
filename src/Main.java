@@ -26,7 +26,7 @@ public class Main {
                 budget.laptopSize(userChoice1);
                 break;
             default:
-                System.out.println("The selection is case sensitive or incorrect input.");
+                System.out.println("Incorrect input. Please try again.");
                 System.exit(1);
                 break;
         }
