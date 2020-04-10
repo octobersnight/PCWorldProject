@@ -7,22 +7,19 @@ public class Main {
 
         new Greet(input.next());
         System.out.println("Are you searching for PC or Laptop?");
-        String userSelection = input.next().toLowerCase();
 
         Budget budget = new Budget();
 
-        switch (userSelection){
+        switch (input.next().toLowerCase()){
             case "pc":
                 System.out.println("Price Range:");
                 budget.priceRange();
-                double userChoice = input.nextDouble();
-                budget.typeOfCases(userChoice);
+                budget.typeOfCases(input.nextDouble());
                 break;
             case "laptop":
                 System.out.println("Size:");
                 budget.laptopSizepick();
-                int userChoice1 = input.nextInt();
-                budget.laptopSize(userChoice1);
+                budget.laptopSize(input.nextInt());
                 break;
             default:
                 System.out.println("Incorrect input. Please try again.");
@@ -32,21 +29,19 @@ public class Main {
 
         System.out.println("We will begin your process, simply answer a few questions." +
                 "\nWe will need your information...");
-        System.out.println("First and Last Name:");
-        String full_name = input.next();
-        System.out.println("Address:");
-        String address = input.next();
-        System.out.println("Contact Number:");
-        String contact = input.next();
-
         RequestInfo custInfo = new RequestInfo();
-        custInfo.setCustName(full_name);
-        custInfo.setCustAddress(address);
-        custInfo.setCustContactNum(contact);
+
+        System.out.println("First and Last Name:");
+        custInfo.setCustName(input.next());
+
+        System.out.println("Address:");
+        custInfo.setCustAddress(input.next());
+
+        System.out.println("Contact Number:");
+        custInfo.setCustContactNum(input.next());
 
         System.out.println(String.format("Name: %s", custInfo.getCustName()));
         System.out.println(String.format("Address: %s", custInfo.getCustAddress()));
         System.out.println(String.format("Contact: %s", custInfo.getCustContactNum()));
-
     }
 }
