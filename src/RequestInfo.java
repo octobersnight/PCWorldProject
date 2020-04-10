@@ -1,14 +1,10 @@
-
-
 public class RequestInfo {
     private String brand;
     private String size;
     private double budget;
-
     private String custName;
     private String custAddress;
     private String custContactNum;
-
 
     public String getBrand() {return brand;}
     public String getSize() {return size;}
@@ -27,8 +23,6 @@ public class RequestInfo {
         System.out.println("Select a budget: ");
         System.out.println();
     }
-
-
 
     public String getCustName() {
         return custName;

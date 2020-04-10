@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String [] args) {
-
         Scanner input = new Scanner(System.in);
         System.out.println("Enter Name: ");
         String userName = input.next();
@@ -51,7 +50,4 @@ public class Main {
         System.out.println(String.format("Contact: %s", custInfo.getCustContactNum()));
 
     }
-
-
-
 }
